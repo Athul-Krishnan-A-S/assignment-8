@@ -1,0 +1,498 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 80%;
+    height: 10%;
+    margin: 0 auto;
+}
+
+header {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.logo {
+    width: 10%;
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+#hamburger-toggle {
+    display: none;
+}
+
+.hamburger {
+    display: block;
+    width: 30px;
+    height: 25px;
+    position: relative;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #333;
+    position: absolute;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+nav {
+    display: flex;
+    place-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+main {
+    width: 100%;
+    background-color: #F2F0F1;
+}
+
+.p1,
+.p2 {
+    width: 100%;
+}
+
+.two-cols {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.main-bottom-container {
+    display: flex;
+}
+
+.find-cloths {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.find-cloths-description {
+    font-size: 1rem;
+    width: 80%;
+}
+
+.button {
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+    width: 20%;
+    height: 6%;
+}
+
+.main-bottom-container div .options-count {
+    font-size: 3rem;
+}
+
+.main-bottom-container {
+    display: flex;
+    gap: 6rem;
+}
+
+.star-img {
+    position: absolute;
+    width: 5%;
+    left: 80%;
+    bottom: 70%;
+}
+
+.logos {
+    width: 100%;
+    background-color: black;
+    height: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8rem;
+    place-items: center;
+    justify-content: center;
+}
+
+.bottom-logo {
+    width: 10%;
+    height: 25%;
+    aspect-ratio: 1/1;
+}
+
+.footer-col-1 {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    gap: 2rem;
+}
+
+.logo-description {
+    width: 100%;
+    line-height: 2rem;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.logo-footer {
+    width: 40%;
+}
+
+.footer-sub-col {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 10rem;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 1rem;
+}
+
+.footer-col-2 {
+    display: flex;
+    gap: 10rem;
+}
+
+footer {
+    padding-block: 5rem;
+}
+
+.footer-heading {
+    font-size: 1.5rem;
+}
+
+.footer-links {
+    font-size: 1.2rem;
+}
+.nav-lists {
+    list-style: none;
+    display: flex;
+    gap: 5rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+@media (min-width:1401px) {
+    .hamburger {
+        display: none;
+    }
+
+    .cols {
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 40%;
+        gap: 2.5rem;
+        justify-content: center;
+    }
+
+    .main-img {
+        width: 90%;
+    }
+
+
+
+}
+
+@media (max-width:1400px) {
+    .hamburger {
+        display: block;
+    }
+
+    nav {
+        justify-content: space-between;
+    }
+
+    .nav-lists {
+        position: absolute;
+        flex-direction: column !important;
+        top: 10%;
+        text-align: center;
+        background-color: white;
+        width: 80%;
+        padding-block: 2rem;
+    }
+
+    .two-cols {
+        flex-direction: column;
+    }
+
+    .find-cloths {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .find-cloths-description {
+        text-align: center;
+    }
+
+    .main-bottom-container {
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 90%;
+    }
+
+    .main-bottom-container div {
+        width: 7rem;
+    }
+
+    .options-count {
+        font-size: 2rem !important;
+    }
+
+    .button {
+        width: 40%;
+        height: 3rem !important;
+    }
+
+    .cols {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem !important;
+        place-items: center;
+    }
+
+    .logo {
+        width: 20%;
+    }
+
+    .star-img {
+        top: 60%;
+    }
+
+    .main-img {
+        width: 80%;
+    }
+
+    .logos {
+        height: 20%;
+        display: flex;
+        justify-content: center;
+        place-items: center;
+        gap: 2rem !important;
+    }
+
+    .bottom-logo {
+        width: 13% !important;
+        height: 1.5rem !important;
+    }
+
+    .footer-container {
+        gap: 2rem !important;
+    }
+
+    .footer-col-2 {
+        gap: 0.5rem !important;
+    }
+
+    .footer-col-1 {
+        width: 100%;
+        text-align: center;
+        place-items: center;
+    }
+
+    .logo-footer {
+        width: 30%;
+    }
+
+    #hamburger-toggle:not(:checked) + .hamburger ~ .nav-lists {
+        display: none !important;
+    }
+
+    #hamburger-toggle:checked .nav-lists {
+        display: flex !important;
+    }
+}
+
+@media (max-width:768px) {
+    .hamburger {
+        display: block;
+    }
+
+    nav {
+        justify-content: space-between;
+    }
+
+    .nav-lists {
+        position: absolute;
+        flex-direction: column !important;
+        top: 10%;
+        text-align: center;
+        background-color: white;
+        gap: 5rem !important;
+        padding-block: 2rem;
+    }
+
+    .two-cols {
+        flex-direction: column;
+    }
+
+    .find-cloths {
+        font-size: 2rem;
+        text-align: start;
+    }
+
+    .find-cloths-description {
+        text-align: justify;
+        width: 18rem;
+    }
+
+    .main-bottom-container {
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        gap: 2rem !important;
+        margin-left: 2rem;
+    }
+
+    .main-bottom-container div {
+        width: 7rem;
+    }
+
+    .options-count {
+        font-size: 1.5rem !important;
+    }
+
+    .button {
+        width: 40%;
+        height: 3rem !important;
+    }
+
+    .cols {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem !important;
+        place-items: center;
+    }
+
+    .logo {
+        width: 20%;
+    }
+
+    .star-img {
+        top: 90%;
+    }
+
+    .main-img {
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    .logos {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        place-items: center;
+        gap: 1.5rem !important;
+    }
+
+    .bottom-logo {
+        width: 13% !important;
+        height: 1.5rem !important;
+    }
+
+    .footer-container {
+        gap: 2rem !important;
+    }
+
+    .footer-col-2 {
+        flex-wrap: wrap;
+    }
+
+    .footer-col-1 {
+        width: 100%;
+        text-align: center;
+        place-items: center;
+    }
+
+    .logo-footer {
+        width: 30%;
+    }
+
+    .footer-sub-col {
+        width: 40%;
+        margin: 0 auto;
+    }
+
+    .footer-links {
+        font-size: 0.9rem;
+    }
+
+    .footer-heading {
+        font-size: 1.2rem;
+    }
+
+    #hamburger-toggle:not(:checked) + .hamburger ~ .nav-lists {
+        display: none !important;
+    }
+
+    #hamburger-toggle:checked .nav-lists {
+        display: flex !important;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#hamburger-toggle:not(:checked)+.hamburger .bar:nth-child(1) {
+    top: 0;
+    transform: translateY(0px);
+}
+
+#hamburger-toggle:not(:checked)+.hamburger .bar:nth-child(2) {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#hamburger-toggle:not(:checked)+.hamburger .bar:nth-child(3) {
+    bottom: 0;
+    transform: translateY(0px);
+}
+
+#hamburger-toggle:checked+.hamburger .bar:nth-child(1) {
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+}
+
+#hamburger-toggle:checked+.hamburger .bar:nth-child(2) {
+    opacity: 0;
+}
+
+#hamburger-toggle:checked+.hamburger .bar:nth-child(3) {
+    bottom: 50%;
+    transform: translateY(50%) rotate(-45deg);
+}
