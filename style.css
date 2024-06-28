@@ -137,11 +137,17 @@ main {
     place-items: center;
     justify-content: center;
 }
-
+.logos img:hover{
+    scale: 1.5;
+    transition: ease;
+    transition-duration: 600ms ;
+}
 .bottom-logo {
     width: 10%;
     height: 25%;
     aspect-ratio: 1/1;
+    transition: ease;
+    transition-duration: 600ms ;
 }
 
 .footer-col-1 {
